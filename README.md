@@ -43,3 +43,8 @@ Repository for Digital Systems Project
 1. Download all files from the [Google Drive folder](https://drive.google.com/drive/folders/1OtRFpkvV7vWxHJ6gIDvLaU2tMXDO_y3a?usp=sharing).
 2. Place all the downloaded files into the ```JupyterNotebookImplementation``` folder.
 ---
+
+### User details
+username: admin
+password: admin123
+user_type = Admin
