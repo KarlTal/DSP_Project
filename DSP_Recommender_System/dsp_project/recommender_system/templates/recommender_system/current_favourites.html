@@ -1,0 +1,96 @@
+{% extends 'recommender_system/parent.html' %}
+
+
+{% block page %}
+<div class ="books">
+
+    {% if request.user.is_anonymous %}
+
+    <h2>No Permissions</h2>
+
+    {% else %}
+    <h2 style = "text-align: center; margin-top:50px;">Current Favourites</h2>
+    <br>
+    <div class = "all_books">
+    <table   class ="table table-hover" >
+        <thead>
+        <tr>
+            <th>Book ID </th>
+            <th>Title</th>
+            <th>Cover Image</th>
+            <th>Current Review</th>
+            <th>Delete</th>
+            <th>Change review</th>
+        </tr>
+    </thead>
+        {% for book in books %}
+        <tr>
+            <td>{{book.book_id}}</td>
+            <td>{{book.book.title}}</td>
+            {% if book.book.cover_image %}
+            <td><img src = "{{book.book.cover_image.url}}" style="width:100px; height:100px;"></td>
+            {% else %}
+            <td>No image uploaded</td>
+            {% endif %}
+            <td>{{book.review}}</td>
+            <td><button class="button" onclick="window.location.href='delete/{{book.book_id}}'">Unfavourite</button></td>
+            <td><button class="update-button" onclick="window.location.href='update_review/{{book.id}}'">Update</button></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+    </div>
+
+</div>
+
+<style>
+
+
+.button{
+  background-color: #FF8A8A;
+  border: none;
+  border-radius:25px;
+}
+
+.update-button{
+  background-color: #8A8AFF;
+  border: none;
+  border-radius:25px;
+}
+
+    .all_books{
+        display: inline-block;
+        overflow-y: auto;
+        margin:auto;
+        width:100%;
+        padding:100px;
+        margin-top:-100px;
+    }
+
+    .books{
+      text-align:center;
+    }
+
+        .table{
+      margin:25px 0;
+      font-size: 0.9em;
+      border-spacing: 50px 0;
+      width:100%;
+      height:100%;
+    }
+
+    .table-striped>tbody>tr:nth-child(even)>td,
+    .table-striped>tbody>tr:nth-child(even)>th {
+    background-color:#ECE3F0;
+    }
+
+    .table-striped>tbody>tr:nth-child(odd)>td,
+    .table-striped>tbody>tr:nth-child(odd)>th {
+    background-color:white;
+    }
+    .table thead{
+    background-color: #94C973;
+    }
+</style>
+{% endblock %}

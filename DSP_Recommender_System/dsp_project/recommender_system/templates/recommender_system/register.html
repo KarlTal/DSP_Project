@@ -1,0 +1,66 @@
+{% extends 'recommender_system/parent.html' %}
+{% load static %}
+{% block page %}
+
+<br>
+  <div class="register">
+    <h1 style="margin-left: auto; margin-right: auto; text-align: center; padding-top:20px;">Register</h1>
+    <br>
+    <br>
+    <form method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="form-outline mb-4">
+        <input type="text" class="form-control" name="first_name" placeholder="First name" required/>
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="text" class="form-control" name="last_name" placeholder="Surname" required />
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="text"  class="form-control" name="username" placeholder="Username"/>
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="email"  class="form-control" name="email" placeholder="Email"  required/>
+ 
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="password"  class="form-control" name="password1" placeholder="Password"  required/>
+  
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="password" class="form-control" name="password2" placeholder="Repeat password" required/>
+
+      </div>
+
+
+      <input type="submit" value="Sign up"
+        class="btn btn-primary btn-block mb-4"  style="background-color: #4e7977; border-color: #4e7977;  ;">
+    </form>
+
+    {{register_form.errors}}
+
+
+
+
+{% block style %}
+<style>
+
+  .register{
+      text-align: center;
+      width: 350px;
+      margin:auto;
+
+  }
+
+
+
+</style>
+{% endblock style %}
+
+{% endblock %}
+
+

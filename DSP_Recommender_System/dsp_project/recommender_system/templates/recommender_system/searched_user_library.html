@@ -1,0 +1,158 @@
+{% extends 'recommender_system/parent.html' %}
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+  
+</head>
+
+{% block page %}
+<div class ="user_profile">
+
+    {% if request.user.is_anonymous %}
+
+    <h2>No Permissions</h2>
+
+    {%elif error_message %}
+    <h1 style="margin:auto; margin-top:100px;">{{error_message}}</h1>
+    {%else%}
+    <div class ="homebody"> 
+      <p class ="hover-underline-animation ">{{username}}'s books and ratings </p>
+  </div>
+    <br>
+    <div class = "all_user_books">
+    <table class = "table table-striped table-hover" style="width:100%">
+      <thead>
+        <tr>
+            <th>Book ID </th>
+            <th>Title</th>
+            <th>Rating</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for mybook in ordered_by_ratings_books %}
+        <tr>
+            <td>{{mybook.book.book_id}}</td>
+            <td>{{mybook.book.title}}</td>
+            <td>{{mybook.rating}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+    </div>
+
+    <div class = "rating_pie_chart">
+        <canvas id ="myFirstChart"></canvas>
+        </div>
+        
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
+        <script>
+            const ctx = document.getElementById('myFirstChart');
+          
+            new Chart(ctx, {
+              type: 'doughnut',
+              data: {
+                labels: ['1 *', '2 *', '3 *', '4 *', '5 *'],
+                datasets: [{
+                  label: '# of Ratings',
+                  data: {{rating_data}},
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                plugins:{
+                    title: {
+                        display: true,
+                        text: 'Ratings Distribution'
+                    }
+                },
+              }
+            });
+          </script>
+<style>
+        
+  .all_user_books{
+    display: inline-block;
+    overflow-y: auto;
+    margin-left:100px;
+    vertical-align:middle;
+    height:300px;
+  }
+
+  .rating_pie_chart{
+    display: inline-block;
+    margin-left: 200px;
+    vertical-align:middle;
+    width:30%;
+    height:30%;
+    position: relative; 
+  }
+
+  .user_profile{
+  text-align:center;
+  }
+
+        .hover-underline-animation {
+  font-size: 2vw;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  color: black;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  border-color: black;
+  }
+
+  .homebody{
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    margin-top:50px;
+
+  }
+  .hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ECE3F0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  }
+
+  .table{
+  margin:25px 0;
+  font-size: 0.9em;
+  border-spacing: 50px 0;
+  width:100%;
+  height:100%;
+  }
+
+  .table-striped>tbody>tr:nth-child(even)>td,
+  .table-striped>tbody>tr:nth-child(even)>th {
+  background-color:#ECE3F0;
+  }
+
+  .table-striped>tbody>tr:nth-child(odd)>td,
+  .table-striped>tbody>tr:nth-child(odd)>th {
+  background-color:white;
+  }
+  .table thead{
+  background-color: #D6B2DA;
+  }
+</style>
+{% endblock %}

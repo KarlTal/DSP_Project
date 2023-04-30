@@ -1,0 +1,70 @@
+{% extends 'recommender_system/parent.html' %}
+
+{% block page %}
+        <h1 style="text-align: center; margin-top:100px;">Deployment of a book recommendation engine in a web application domain</h1>
+<br>
+
+<div class = "about-body">
+    <div class = "about-aim">
+        <h1> Project Aim </h1>
+        <h3>To explore the use of machine learning in implementing a recommender engine and identify possible uses within the domain of web technology.</h3>
+    </div>
+    <div class = "about-chart">
+        <div class = "timeline">
+        <h1> Project Timeline </h1>
+        <img src="/static/recommender_system/about/GanttChartPosterDraft1.png" style="object-fit: cover;">
+        </div>
+        <div class = "technologies">
+            <h1> Technologies used </h1>
+            <ul >
+                <li>Python</li>
+                <li>HTML and CSS</li>
+                <li>JavaScript</li>
+                <li>Jupyter Notebook</li>
+                <li>Scikit-learn</li>
+                <li>Django</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    .about-body{
+        padding:10px;
+        display:grid;
+        grid-template-columns: 1fr;
+        text-align:center;
+    }
+    .about-header{
+    /* padding:10px; */
+    background-image: url("/static/recommender_system/about/development.png");
+    width:100%;
+    background-size: cover;
+    min-height:30vh;
+    position:relative;
+    color:white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    }
+
+    .about-chart{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 100px;
+    }
+
+    .about-aim{
+        padding-bottom: 100px;
+    }
+
+    ul{
+        text-align: center;
+        list-style-position: inside;
+    }
+
+    .image-text{
+    font-size: 1.5rem;
+
+    }
+
+</style>
+{% endblock %}

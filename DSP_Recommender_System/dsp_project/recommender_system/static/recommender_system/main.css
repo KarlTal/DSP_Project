@@ -1,0 +1,57 @@
+.sticky-footer {
+    position: sticky;
+    top:100%;
+    background-color: #f7f3ea;
+    color: black;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    text-align:center;
+}
+
+/* .main {
+    font-size: 25px;
+    display:grid;
+    grid-template-columns:1fr;
+} */
+
+/* .header{
+    background-image: url("/static/recommender_system/header.png");
+    width:100%;
+    background-size: cover;
+    min-height:30vh;
+    position:relative;
+    color:white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+} */
+
+
+.color-overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    /* background-color: rgba(0,0,0,.4); */
+
+
+}
+@media (max-width:768px ){
+    .header{
+        min-height: 15vh;
+    }
+}
+
+
+body {
+    font-family: 'Times New Roman', Times, serif ;
+    min-height:100vh;
+  }
+
+.navbar-brand{
+    font-size:35px;
+}
+.nav-item{
+    font-size:25px;
+}
+
+.dropdown-item{
+    font-size:25px;
+}

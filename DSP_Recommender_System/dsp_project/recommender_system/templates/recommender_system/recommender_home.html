@@ -1,0 +1,79 @@
+{% extends 'recommender_system/parent.html' %}
+
+
+{% block page %}
+
+{% if request.user.is_anonymous %}
+    
+<h2>No Permissions</h2>
+
+{% else %}
+<h2 style = "text-align: center;">Top recommended books </h2>
+<div class = "outer">
+    <div class ="book_recommendation">
+            <br>
+            <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>GoodReads URL</th>
+                    <th>Cover</th>
+                </tr>
+            </thead>
+                {% for id,title,url,cover_image in top_recommendation %}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{title}}</td>
+                    <td><a href = "{{url}}">GoodReads Link </a></td>
+                    <td><img src="{{cover_image}}" style="width:px; height:100px;"></td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            {% endif %}
+    </div>
+</div>
+<style>
+
+    .outer{
+        margin:auto; 
+        padding-left:100px;
+        padding-right:100px;
+    }
+    .book_recommendation{
+        margin:auto;
+        width:100%;
+        overflow-y: auto;
+        height: 700px;
+    }
+
+    .table{
+      margin:25px 0;
+      font-size: 0.9em;
+      border-spacing: 50px 0;
+      width:100%;
+      height:100%;
+    }
+
+    .table>tbody>tr:nth-child(even)>td,
+    .table>tbody>tr:nth-child(even)>th {
+    background-color:#ECE3F0;
+    }
+
+    .table>tbody>tr:nth-child(odd)>td,
+    .table>tbody>tr:nth-child(odd)>th {
+    background-color:white;
+    }
+
+    .table tbody tr:hover td, .table tbody tr:hover th {
+    background-color: #ecf2f0;
+    }
+
+    .table thead{
+    background-color: #D6B2DA;
+    }
+
+</style>
+
+{% endblock %}

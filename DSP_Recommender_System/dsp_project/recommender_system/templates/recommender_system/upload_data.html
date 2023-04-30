@@ -1,0 +1,84 @@
+{% extends 'recommender_system/parent.html' %}
+{% load static %}
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    
+  </head>
+
+{% block page %}
+
+
+<div class = "upload-data">
+    <div class ="homebody"> 
+        <p class ="hover-underline-animation ">Import GoodReads' Library</p>
+        <br>
+        <img id = "home_image" src = "{% static 'recommender_system/upload/good-reads.png' %}" style ="width:200px; height:200px; margin-top:25px;" alt="First slide">
+    </div>
+    <div style="text-align: center;">
+    {% if error_message %}
+    {{error_message}}
+    {% endif %}
+    </div>
+<div class = "upload">
+<form method="POST" enctype="multipart/form-data" class ="upload-form">
+    {% csrf_token %}
+    <input type = "file", name ="document" accept ='.csv' >
+    <button class="button">Upload data</button>
+</form>
+</div>
+    {% if url %}
+    <p>Uploaded file: <a href = "{{ url }}">{{ url }}</a></p>
+    {% endif %}
+
+</div>
+
+<style>
+    .upload-data{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .upload{
+        margin:auto;
+        margin-top:20px;
+    }
+
+    .hover-underline-animation {
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    border-color: black;
+    }
+
+    .homebody{
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+        margin-top:50px;
+
+    }
+    .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ECE3F0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    }
+
+    .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
+</style>
+{% endblock %}

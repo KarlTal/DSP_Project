@@ -1,0 +1,37 @@
+{% extends 'recommender_system/parent.html' %}
+
+{% block page %}
+
+<div class="container">
+        <div class ="update-form">
+            <h1>Update book: {{book.title}}</h1>
+            <form id="update" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                {{form.as_p}}
+                <input type="submit" value="Update">
+            </form>
+        </div>
+</div>
+
+<style>
+
+.container{
+        display:grid;
+        grid-template-columns: 1fr;
+        text-align:center;
+        margin-top:150px;
+
+    }
+
+    .update-form{
+        text-align:center;
+        margin:auto;
+        margin-top:20px;
+        background-color: #ECE3F0;
+        padding:100px;
+        border-radius: 25px;
+    }
+    
+</style>
+{% endblock %}

@@ -1,0 +1,3456 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2023-04-19T14:46:35.672Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2023-04-19T14:59:14.063Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "3",
+        "object_repr": "fayetalavera@yahoo.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2023-04-19T14:59:21.093Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "3",
+        "object_repr": "fayetalavera@yahoo.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add book",
+        "content_type": 7,
+        "codename": "add_book"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change book",
+        "content_type": 7,
+        "codename": "change_book"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete book",
+        "content_type": 7,
+        "codename": "delete_book"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view book",
+        "content_type": 7,
+        "codename": "view_book"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add library",
+        "content_type": 8,
+        "codename": "add_library"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change library",
+        "content_type": 8,
+        "codename": "change_library"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete library",
+        "content_type": 8,
+        "codename": "delete_library"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view library",
+        "content_type": 8,
+        "codename": "view_library"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add book_ library",
+        "content_type": 9,
+        "codename": "add_book_library"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change book_ library",
+        "content_type": 9,
+        "codename": "change_book_library"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete book_ library",
+        "content_type": 9,
+        "codename": "delete_book_library"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view book_ library",
+        "content_type": 9,
+        "codename": "view_book_library"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add admin monthly favourites",
+        "content_type": 10,
+        "codename": "add_adminmonthlyfavourites"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change admin monthly favourites",
+        "content_type": 10,
+        "codename": "change_adminmonthlyfavourites"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete admin monthly favourites",
+        "content_type": 10,
+        "codename": "delete_adminmonthlyfavourites"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view admin monthly favourites",
+        "content_type": 10,
+        "codename": "view_adminmonthlyfavourites"
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+        "name": "Admin",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+        "name": "User",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$b6ECYAcnGfNMhf76vugCiS$nh5G5+Rf0+5N65/9AGMloPYpmAhh7QByliOw3SFLQJU=",
+        "last_login": "2023-04-28T10:14:53.832Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@main.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-04-19T14:43:34Z",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$cVhjjgvHVBSHimuk8WHLzp$cwAqTHPJayeJox6gE5imcB+7LNPXrdDoJTIMhPqaxUg=",
+        "last_login": "2023-04-28T09:21:18.973Z",
+        "is_superuser": false,
+        "username": "karl@karl.com",
+        "first_name": "Karl",
+        "last_name": "Talavera",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-04-19T14:46:54.746Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$pYr4k0OcaC8BYNg37TLjeh$z6ZwmEutMhp5RxgRwT82C2TWlOQOE7x6BkOANnXbFtY=",
+        "last_login": "2023-04-28T10:15:07.547Z",
+        "is_superuser": false,
+        "username": "fayetalavera@yahoo.com",
+        "first_name": "Faye",
+        "last_name": "Talavera",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-04-19T14:51:59Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$REMq0CNsQA6qFScvPkgyu4$Tv/EOZF+4FZTs7cB0NgkBrECefxRV43j3kKPc3A7oxs=",
+        "last_login": "2023-04-23T20:33:14.097Z",
+        "is_superuser": false,
+        "username": "bananaoreomilk123@gmail.com",
+        "first_name": "Banana",
+        "last_name": "Oreo",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-04-19T15:05:21.564Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$NFtZTyU6UBe84cT0C1Wcbj$FhDIDVPtp5usZImUoI1pilg465QHj0MGkgF0vXAeA6o=",
+        "last_login": "2023-04-22T14:12:55.249Z",
+        "is_superuser": false,
+        "username": "rubixcube123",
+        "first_name": "Rubix",
+        "last_name": "Cube",
+        "email": "rubixcube@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-04-22T14:12:35.632Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$j866gC0H9w5x0Y8qxi5MGN$esPr71OPqX+vl0m/SdY4bhVzxu9xfYC6mtw7ifIVMDg=",
+        "last_login": "2023-04-24T11:57:37.138Z",
+        "is_superuser": false,
+        "username": "sus123",
+        "first_name": "sus",
+        "last_name": "sus",
+        "email": "sus@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-04-24T09:26:56.611Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$wmJWNSy8ZFwN1g7YV22qJx$Mwj5E7x1VGq054WkmWWsfROZbDiK075bfFv2J5f3gB4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "paprika123",
+        "first_name": "paprika",
+        "last_name": "hi",
+        "email": "paprika@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-04-24T12:28:18.121Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$9lzxi6hdN4by7UjvfamRSd$1Qigd6jcHD+jRF9aTjrVPlOW1bm3tgn3M+MwnN3lVU8=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "prawn123",
+        "first_name": "prawn",
+        "last_name": "cocktail",
+        "email": "prawn@mail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-04-24T12:28:56.597Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$hecL3iwubbG1irOAVXXodD$lqmwlXJOl7126WIhHmIODGAVnBZcz/Kk6Xnw5EJcqj8=",
+        "last_login": "2023-04-28T10:14:43.738Z",
+        "is_superuser": false,
+        "username": "lasagne123",
+        "first_name": "Lasagne",
+        "last_name": "Bolognese",
+        "email": "lasagne@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-04-24T12:53:55.837Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "recommender_system",
+        "model": "book"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "recommender_system",
+        "model": "library"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "recommender_system",
+        "model": "book_library"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "recommender_system",
+        "model": "adminmonthlyfavourites"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4phscttaxxj8rvnwbakjercwsu7gun3u",
+    "fields": {
+        "session_data": ".eJxVjUEOwiAURO_C2hAoCL9duu8JjCH_A7VVCwltV8a7S5MudDeZeTPzZg63dXTbEoubAutYw06_HqF_xrQH4YHpnrnPaS0T8R3hR7rwPof4uhzs38CIy1jbABpBklYK_KAoWAS0QlYBA0TSaIwRMpBuLJFthVGtEr7xVgXlzxLqaMHkSvR5nutJLKy73j5fum0_Bg:1pqgdh:tGnU7xCI-4PsHd7UxWAJktb5wZd1WRArd5VzgTywzWQ",
+        "expire_date": "2023-05-07T20:48:53.865Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8ygiiuehx3qoo2xohoe9og378maoaoy8",
+    "fields": {
+        "session_data": ".eJxVjTsOwjAQRO_iGln-5eOU9JwAIWvXuyEBYktOUiHuTiKlgHbezJu3CLAuQ1hnLmEk0YlanH4zhPjktAN6QLpnGXNayohyr8iDzvKSiV_no_snGGAetnXfYiSvmso4Jge108orZ6y3GittqHV901JFOlpvqOmNtoCANbBidAibtEAKhWOepu2Ei-iut88XuYs_hA:1pquiI:nqvQhjujWOS5lkvYbr765SLDq2g9Y7MXzbZWEWVhQjA",
+        "expire_date": "2023-05-08T11:50:34.944Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "j34ra43a3637fwu4nlu8rwa7efxpezey",
+    "fields": {
+        "session_data": ".eJxVjUEOwiAURO_C2hAoCL9duu8JjCH_A7VVCwltV8a7S5MudDeZeTPzZg63dXTbEoubAutYw06_HqF_xrQH4YHpnrnPaS0T8R3hR7rwPof4uhzs38CIy1jbABpBklYK_KAoWAS0QlYBA0TSaIwRMpBuLJFthVGtEr7xVgXlzxLqaMHkSvR5nutJLKy73j5fum0_Bg:1pqYDv:W61B6BCNWAYjl2xy_rndYYA1dbg5BCQe0fvsmw3fxZI",
+        "expire_date": "2023-05-07T11:49:43.162Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "v8ahcuvt3clf9ynz1s9m2tax3c74n4hg",
+    "fields": {
+        "session_data": ".eJxVjUEOwiAURO_C2hAoCL9duu8JjCH_A7VVCwltV8a7S5MudDeZeTPzZg63dXTbEoubAutYw06_HqF_xrQH4YHpnrnPaS0T8R3hR7rwPof4uhzs38CIy1jbABpBklYK_KAoWAS0QlYBA0TSaIwRMpBuLJFthVGtEr7xVgXlzxLqaMHkSvR5nutJLKy73j5fum0_Bg:1ps7dx:o9fDVhg-GwAPw6hcoZ38wFKtzr-w11U03M7XOKkiD-M",
+        "expire_date": "2023-05-11T19:51:05.223Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "y3veqj8qci3wxxvxhtm5cww1db8usr49",
+    "fields": {
+        "session_data": ".eJxVjUEOwiAURO_C2hAoCL9duu8JjCH_A7VVCwltV8a7S5MudDeZeTPzZg63dXTbEoubAutYw06_HqF_xrQH4YHpnrnPaS0T8R3hR7rwPof4uhzs38CIy1jbABpBklYK_KAoWAS0QlYBA0TSaIwRMpBuLJFthVGtEr7xVgXlzxLqaMHkSvR5nutJLKy73j5fum0_Bg:1prWkl:mwsyLCSvo6Wuts7yCrD_HKUu15h7X7E5-cep9-CREQw",
+        "expire_date": "2023-05-10T04:27:39.400Z"
+    }
+},
+{
+    "model": "recommender_system.library",
+    "pk": 1,
+    "fields": {
+        "user_id": 2,
+        "private": true
+    }
+},
+{
+    "model": "recommender_system.library",
+    "pk": 2,
+    "fields": {
+        "user_id": 3,
+        "private": false
+    }
+},
+{
+    "model": "recommender_system.library",
+    "pk": 3,
+    "fields": {
+        "user_id": 4,
+        "private": false
+    }
+},
+{
+    "model": "recommender_system.library",
+    "pk": 4,
+    "fields": {
+        "user_id": 5,
+        "private": false
+    }
+},
+{
+    "model": "recommender_system.library",
+    "pk": 5,
+    "fields": {
+        "user_id": 6,
+        "private": true
+    }
+},
+{
+    "model": "recommender_system.library",
+    "pk": 6,
+    "fields": {
+        "user_id": 9,
+        "private": false
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 1885,
+    "fields": {
+        "title": "Pride and Prejudice",
+        "cover_image": "pride_prejudice.jpg"
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 4671,
+    "fields": {
+        "title": "The Great Gatsby",
+        "cover_image": "great_gatsby.jpg"
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 5297,
+    "fields": {
+        "title": "The Picture of Dorian Gray",
+        "cover_image": "picutre_of_dorian_gray.jpg"
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 7624,
+    "fields": {
+        "title": "Lord of the Flies",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 15196,
+    "fields": {
+        "title": "Maus I: A Survivor's Tale: My Father Bleeds History (Maus, #1)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 18378,
+    "fields": {
+        "title": "Flowers for Algernon",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 18490,
+    "fields": {
+        "title": "Frankenstein",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 28186,
+    "fields": {
+        "title": "The Sea of Monsters (Percy Jackson and the Olympians, #2)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 28187,
+    "fields": {
+        "title": "The Lightning Thief (Percy Jackson and the Olympians, #1)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 33532,
+    "fields": {
+        "title": "Dracula",
+        "cover_image": "Diagram.png"
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 51496,
+    "fields": {
+        "title": "Dr. Jekyll and Mr. Hyde",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 72193,
+    "fields": {
+        "title": "Harry Potter and the Philosopher’s Stone (Harry Potter, #1)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 102927,
+    "fields": {
+        "title": "Never Let Me Go",
+        "cover_image": "never_let_me.jpg"
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 132122,
+    "fields": {
+        "title": "Blood Brothers (Modern Classics)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 132297,
+    "fields": {
+        "title": "The Play and Other Stories",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 364053,
+    "fields": {
+        "title": "A Child Called It",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 485894,
+    "fields": {
+        "title": "The Metamorphosis",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 561456,
+    "fields": {
+        "title": "The Titan's Curse (Percy Jackson and the Olympians, #3)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 602925,
+    "fields": {
+        "title": "Fiesta",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 617373,
+    "fields": {
+        "title": "As I Lay Dying",
+        "cover_image": "as_i_lay_dying.jpg"
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 778861,
+    "fields": {
+        "title": "Men Without Women",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 793216,
+    "fields": {
+        "title": "Mrs Dalloway",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 862821,
+    "fields": {
+        "title": "The Aleph and Other Stories",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 907650,
+    "fields": {
+        "title": "Under the Net",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 1104617,
+    "fields": {
+        "title": "The Collector",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 1432349,
+    "fields": {
+        "title": "Pooh and the Philosophers",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 1795826,
+    "fields": {
+        "title": "Letters to Milena",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 2120932,
+    "fields": {
+        "title": "The Battle of the Labyrinth (Percy Jackson and the Olympians, #4)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 2767052,
+    "fields": {
+        "title": "The Hunger Games (The Hunger Games, #1)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 2974542,
+    "fields": {
+        "title": "Little Women",
+        "cover_image": "little_women.jpg"
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 3149348,
+    "fields": {
+        "title": "Animal Farm",
+        "cover_image": "animal_farm.jpg"
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 3227063,
+    "fields": {
+        "title": "The Way of Shadows (Night Angel, #1)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 3744438,
+    "fields": {
+        "title": "1984",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 4556058,
+    "fields": {
+        "title": "The Last Olympian (Percy Jackson and the Olympians, #5)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 6193119,
+    "fields": {
+        "title": "Good Wives",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 6282632,
+    "fields": {
+        "title": "Emma",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 6564051,
+    "fields": {
+        "title": "Kafka on the Shore (Vintage International)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 6756179,
+    "fields": {
+        "title": "The Good Soldier",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 7130670,
+    "fields": {
+        "title": "What We Talk about When We Talk about Love",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 7853133,
+    "fields": {
+        "title": "The Talented Mr Ripley  (Ripley, #1)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 8367360,
+    "fields": {
+        "title": "Fight Club",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 9025882,
+    "fields": {
+        "title": "The Outsider",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 9361589,
+    "fields": {
+        "title": "The Night Circus",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 9981898,
+    "fields": {
+        "title": "The Diary of a Nobody",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 10335006,
+    "fields": {
+        "title": "Rebecca",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 11437531,
+    "fields": {
+        "title": "Catch-22",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 13611052,
+    "fields": {
+        "title": "The Night Circus",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 15790264,
+    "fields": {
+        "title": "Stoner",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 16077272,
+    "fields": {
+        "title": "The Master and Margarita",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 17161156,
+    "fields": {
+        "title": "Norwegian Wood",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 17163350,
+    "fields": {
+        "title": "Of Human Bondage",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 20443680,
+    "fields": {
+        "title": "The Epic of Gilgamesh",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 21054576,
+    "fields": {
+        "title": "High Fidelity",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 21523117,
+    "fields": {
+        "title": "Juliet, Naked",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 21969786,
+    "fields": {
+        "title": "More Than This",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 22011034,
+    "fields": {
+        "title": "A Girl Is a Half-formed Thing",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 22822858,
+    "fields": {
+        "title": "A Little Life",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 28245487,
+    "fields": {
+        "title": "The Buried Giant",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 30185619,
+    "fields": {
+        "title": "The Perks of Being a Wallflower",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 30335545,
+    "fields": {
+        "title": "Ghosts of the Tsunami: Death and Life in Japan’s Disaster Zone",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 31213519,
+    "fields": {
+        "title": "The Peculiar Life of a Lonely Postman",
+        "cover_image": "peculiar_life.jpg"
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 32491716,
+    "fields": {
+        "title": "To Have and Have Not",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 34051011,
+    "fields": {
+        "title": "Pachinko",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 35510008,
+    "fields": {
+        "title": "This is Going to Hurt: Secret Diaries of a Junior Doctor",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 35721089,
+    "fields": {
+        "title": "Beautiful Boy: A Father's Journey Through His Son's Addiction",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 36000789,
+    "fields": {
+        "title": "The Outsider",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 36114337,
+    "fields": {
+        "title": "Men Without Women",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 40099418,
+    "fields": {
+        "title": "Everything I Know About Love",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 40720209,
+    "fields": {
+        "title": "Secrets of the Human Body",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 41086877,
+    "fields": {
+        "title": "Normal People",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 43481527,
+    "fields": {
+        "title": "Beautiful Boy",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 43562724,
+    "fields": {
+        "title": "This Is Going to Hurt",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 44250383,
+    "fields": {
+        "title": "A Tale for the Time Being",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 44421460,
+    "fields": {
+        "title": "Before the Coffee Gets Cold (Before the Coffee Gets Cold, #1)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 49499978,
+    "fields": {
+        "title": "The Catcher in the Rye",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 49921026,
+    "fields": {
+        "title": "Beloved",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 50269327,
+    "fields": {
+        "title": "Earthlings",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 52544164,
+    "fields": {
+        "title": "On Earth We’re Briefly Gorgeous",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 52848092,
+    "fields": {
+        "title": "Little Weirds",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 52873922,
+    "fields": {
+        "title": "Winter in Sokcho",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 54373691,
+    "fields": {
+        "title": "Tales from the Café (Before the Coffee Gets Cold, #2)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 54633172,
+    "fields": {
+        "title": "The Promise",
+        "cover_image": "the_promise_Ntz63Vw.jpg"
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 55111243,
+    "fields": {
+        "title": "Klara and the Sun",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 56927764,
+    "fields": {
+        "title": "Heaven",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 57676019,
+    "fields": {
+        "title": "Ariadne",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 57885010,
+    "fields": {
+        "title": "The Remains of the Day",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 58028296,
+    "fields": {
+        "title": "The Song of Achilles",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 58617701,
+    "fields": {
+        "title": "'Salem's Lot",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 58684140,
+    "fields": {
+        "title": "The Picture of Dorian Gray (Collins Classics)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 60194019,
+    "fields": {
+        "title": "The Yellow Wallpaper  Herland (Collins Classics)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 60224365,
+    "fields": {
+        "title": "Before Your Memory Fades (Before the Coffee Gets Cold, #3)",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book",
+    "pk": 60231832,
+    "fields": {
+        "title": "An Artist of the Floating World",
+        "cover_image": ""
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 1,
+    "fields": {
+        "library": 1,
+        "book": 9361589,
+        "rating": 2
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 2,
+    "fields": {
+        "library": 1,
+        "book": 2767052,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 3,
+    "fields": {
+        "library": 1,
+        "book": 1885,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 4,
+    "fields": {
+        "library": 1,
+        "book": 4671,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 5,
+    "fields": {
+        "library": 1,
+        "book": 72193,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 6,
+    "fields": {
+        "library": 2,
+        "book": 41086877,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 7,
+    "fields": {
+        "library": 2,
+        "book": 52848092,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 8,
+    "fields": {
+        "library": 2,
+        "book": 1795826,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 9,
+    "fields": {
+        "library": 2,
+        "book": 36114337,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 10,
+    "fields": {
+        "library": 2,
+        "book": 17163350,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 11,
+    "fields": {
+        "library": 2,
+        "book": 9981898,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 12,
+    "fields": {
+        "library": 2,
+        "book": 60194019,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 13,
+    "fields": {
+        "library": 2,
+        "book": 22011034,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 14,
+    "fields": {
+        "library": 2,
+        "book": 30185619,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 15,
+    "fields": {
+        "library": 2,
+        "book": 56927764,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 16,
+    "fields": {
+        "library": 2,
+        "book": 31213519,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 17,
+    "fields": {
+        "library": 2,
+        "book": 9025882,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 18,
+    "fields": {
+        "library": 2,
+        "book": 28245487,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 19,
+    "fields": {
+        "library": 2,
+        "book": 21523117,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 20,
+    "fields": {
+        "library": 2,
+        "book": 862821,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 21,
+    "fields": {
+        "library": 2,
+        "book": 40099418,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 22,
+    "fields": {
+        "library": 2,
+        "book": 52544164,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 23,
+    "fields": {
+        "library": 2,
+        "book": 15790264,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 24,
+    "fields": {
+        "library": 2,
+        "book": 10335006,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 25,
+    "fields": {
+        "library": 2,
+        "book": 6193119,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 26,
+    "fields": {
+        "library": 2,
+        "book": 1432349,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 27,
+    "fields": {
+        "library": 2,
+        "book": 18378,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 28,
+    "fields": {
+        "library": 2,
+        "book": 8367360,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 29,
+    "fields": {
+        "library": 2,
+        "book": 30335545,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 30,
+    "fields": {
+        "library": 2,
+        "book": 132297,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 31,
+    "fields": {
+        "library": 2,
+        "book": 60231832,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 32,
+    "fields": {
+        "library": 2,
+        "book": 907650,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 33,
+    "fields": {
+        "library": 2,
+        "book": 1104617,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 34,
+    "fields": {
+        "library": 2,
+        "book": 16077272,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 35,
+    "fields": {
+        "library": 2,
+        "book": 617373,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 36,
+    "fields": {
+        "library": 2,
+        "book": 3149348,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 37,
+    "fields": {
+        "library": 2,
+        "book": 34051011,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 38,
+    "fields": {
+        "library": 2,
+        "book": 7130670,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 39,
+    "fields": {
+        "library": 2,
+        "book": 3744438,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 40,
+    "fields": {
+        "library": 2,
+        "book": 6564051,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 41,
+    "fields": {
+        "library": 2,
+        "book": 2974542,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 42,
+    "fields": {
+        "library": 2,
+        "book": 21054576,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 43,
+    "fields": {
+        "library": 2,
+        "book": 364053,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 44,
+    "fields": {
+        "library": 2,
+        "book": 54633172,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 45,
+    "fields": {
+        "library": 2,
+        "book": 793216,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 46,
+    "fields": {
+        "library": 2,
+        "book": 21969786,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 47,
+    "fields": {
+        "library": 2,
+        "book": 32491716,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 48,
+    "fields": {
+        "library": 2,
+        "book": 602925,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 49,
+    "fields": {
+        "library": 2,
+        "book": 11437531,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 50,
+    "fields": {
+        "library": 2,
+        "book": 5297,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 51,
+    "fields": {
+        "library": 2,
+        "book": 485894,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 52,
+    "fields": {
+        "library": 2,
+        "book": 6756179,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 53,
+    "fields": {
+        "library": 2,
+        "book": 36000789,
+        "rating": 2
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 54,
+    "fields": {
+        "library": 2,
+        "book": 18490,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 55,
+    "fields": {
+        "library": 2,
+        "book": 20443680,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 56,
+    "fields": {
+        "library": 2,
+        "book": 49499978,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 57,
+    "fields": {
+        "library": 2,
+        "book": 57885010,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 58,
+    "fields": {
+        "library": 2,
+        "book": 54373691,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 59,
+    "fields": {
+        "library": 2,
+        "book": 52873922,
+        "rating": 1
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 60,
+    "fields": {
+        "library": 2,
+        "book": 6282632,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 61,
+    "fields": {
+        "library": 2,
+        "book": 28186,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 62,
+    "fields": {
+        "library": 2,
+        "book": 44250383,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 63,
+    "fields": {
+        "library": 2,
+        "book": 40720209,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 64,
+    "fields": {
+        "library": 2,
+        "book": 43562724,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 65,
+    "fields": {
+        "library": 2,
+        "book": 4556058,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 66,
+    "fields": {
+        "library": 2,
+        "book": 2120932,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 67,
+    "fields": {
+        "library": 2,
+        "book": 55111243,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 68,
+    "fields": {
+        "library": 2,
+        "book": 561456,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 69,
+    "fields": {
+        "library": 2,
+        "book": 17161156,
+        "rating": 2
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 70,
+    "fields": {
+        "library": 2,
+        "book": 28187,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 71,
+    "fields": {
+        "library": 2,
+        "book": 58617701,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 72,
+    "fields": {
+        "library": 2,
+        "book": 102927,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 73,
+    "fields": {
+        "library": 2,
+        "book": 43481527,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 74,
+    "fields": {
+        "library": 2,
+        "book": 13611052,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 75,
+    "fields": {
+        "library": 2,
+        "book": 57676019,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 76,
+    "fields": {
+        "library": 2,
+        "book": 58028296,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 77,
+    "fields": {
+        "library": 2,
+        "book": 44421460,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 78,
+    "fields": {
+        "library": 3,
+        "book": 9361589,
+        "rating": 2
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 79,
+    "fields": {
+        "library": 3,
+        "book": 2767052,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 80,
+    "fields": {
+        "library": 3,
+        "book": 1885,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 81,
+    "fields": {
+        "library": 3,
+        "book": 4671,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 82,
+    "fields": {
+        "library": 3,
+        "book": 72193,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 83,
+    "fields": {
+        "library": 4,
+        "book": 1885,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 84,
+    "fields": {
+        "library": 4,
+        "book": 4671,
+        "rating": 2
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 85,
+    "fields": {
+        "library": 4,
+        "book": 5297,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 86,
+    "fields": {
+        "library": 4,
+        "book": 18378,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 87,
+    "fields": {
+        "library": 4,
+        "book": 18490,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 88,
+    "fields": {
+        "library": 4,
+        "book": 28186,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 89,
+    "fields": {
+        "library": 4,
+        "book": 28187,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 90,
+    "fields": {
+        "library": 4,
+        "book": 72193,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 91,
+    "fields": {
+        "library": 4,
+        "book": 102927,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 92,
+    "fields": {
+        "library": 4,
+        "book": 132297,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 93,
+    "fields": {
+        "library": 4,
+        "book": 364053,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 94,
+    "fields": {
+        "library": 4,
+        "book": 485894,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 95,
+    "fields": {
+        "library": 4,
+        "book": 485894,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 96,
+    "fields": {
+        "library": 4,
+        "book": 561456,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 97,
+    "fields": {
+        "library": 4,
+        "book": 602925,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 98,
+    "fields": {
+        "library": 4,
+        "book": 617373,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 99,
+    "fields": {
+        "library": 4,
+        "book": 793216,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 100,
+    "fields": {
+        "library": 4,
+        "book": 862821,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 101,
+    "fields": {
+        "library": 4,
+        "book": 907650,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 102,
+    "fields": {
+        "library": 4,
+        "book": 1104617,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 103,
+    "fields": {
+        "library": 4,
+        "book": 1432349,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 104,
+    "fields": {
+        "library": 4,
+        "book": 2120932,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 105,
+    "fields": {
+        "library": 4,
+        "book": 1795826,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 106,
+    "fields": {
+        "library": 4,
+        "book": 2974542,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 107,
+    "fields": {
+        "library": 4,
+        "book": 2974542,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 108,
+    "fields": {
+        "library": 4,
+        "book": 3149348,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 109,
+    "fields": {
+        "library": 4,
+        "book": 3744438,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 110,
+    "fields": {
+        "library": 4,
+        "book": 4556058,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 111,
+    "fields": {
+        "library": 1,
+        "book": 58684140,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 112,
+    "fields": {
+        "library": 1,
+        "book": 35721089,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 113,
+    "fields": {
+        "library": 1,
+        "book": 15196,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 114,
+    "fields": {
+        "library": 1,
+        "book": 60224365,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 115,
+    "fields": {
+        "library": 1,
+        "book": 7853133,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 116,
+    "fields": {
+        "library": 1,
+        "book": 54373691,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 117,
+    "fields": {
+        "library": 1,
+        "book": 50269327,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 118,
+    "fields": {
+        "library": 1,
+        "book": 31213519,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 119,
+    "fields": {
+        "library": 1,
+        "book": 102927,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 120,
+    "fields": {
+        "library": 1,
+        "book": 33532,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 121,
+    "fields": {
+        "library": 1,
+        "book": 58617701,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 122,
+    "fields": {
+        "library": 1,
+        "book": 3149348,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 123,
+    "fields": {
+        "library": 1,
+        "book": 35510008,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 124,
+    "fields": {
+        "library": 1,
+        "book": 51496,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 125,
+    "fields": {
+        "library": 1,
+        "book": 778861,
+        "rating": 1
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 126,
+    "fields": {
+        "library": 1,
+        "book": 49921026,
+        "rating": 1
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 127,
+    "fields": {
+        "library": 1,
+        "book": 54633172,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 128,
+    "fields": {
+        "library": 1,
+        "book": 22822858,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 129,
+    "fields": {
+        "library": 1,
+        "book": 9361589,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 130,
+    "fields": {
+        "library": 1,
+        "book": 3227063,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 131,
+    "fields": {
+        "library": 1,
+        "book": 132122,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 132,
+    "fields": {
+        "library": 1,
+        "book": 7624,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 133,
+    "fields": {
+        "library": 1,
+        "book": 44421460,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 134,
+    "fields": {
+        "library": 2,
+        "book": 58684140,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 135,
+    "fields": {
+        "library": 2,
+        "book": 35721089,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 136,
+    "fields": {
+        "library": 2,
+        "book": 15196,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 137,
+    "fields": {
+        "library": 2,
+        "book": 60224365,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 138,
+    "fields": {
+        "library": 2,
+        "book": 7853133,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 139,
+    "fields": {
+        "library": 1,
+        "book": 5297,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 140,
+    "fields": {
+        "library": 1,
+        "book": 18378,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 141,
+    "fields": {
+        "library": 1,
+        "book": 617373,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 142,
+    "fields": {
+        "library": 5,
+        "book": 33532,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 143,
+    "fields": {
+        "library": 5,
+        "book": 28187,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 144,
+    "fields": {
+        "library": 5,
+        "book": 28186,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 145,
+    "fields": {
+        "library": 5,
+        "book": 28186,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 146,
+    "fields": {
+        "library": 5,
+        "book": 18490,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 147,
+    "fields": {
+        "library": 5,
+        "book": 58684140,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 148,
+    "fields": {
+        "library": 5,
+        "book": 35721089,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 149,
+    "fields": {
+        "library": 5,
+        "book": 15196,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 150,
+    "fields": {
+        "library": 5,
+        "book": 60224365,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 151,
+    "fields": {
+        "library": 5,
+        "book": 7853133,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 152,
+    "fields": {
+        "library": 5,
+        "book": 54373691,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 153,
+    "fields": {
+        "library": 5,
+        "book": 50269327,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 154,
+    "fields": {
+        "library": 5,
+        "book": 31213519,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 155,
+    "fields": {
+        "library": 5,
+        "book": 102927,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 156,
+    "fields": {
+        "library": 6,
+        "book": 58684140,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 157,
+    "fields": {
+        "library": 6,
+        "book": 35721089,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 158,
+    "fields": {
+        "library": 6,
+        "book": 15196,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 159,
+    "fields": {
+        "library": 6,
+        "book": 60224365,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 160,
+    "fields": {
+        "library": 6,
+        "book": 7853133,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 161,
+    "fields": {
+        "library": 6,
+        "book": 54373691,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 162,
+    "fields": {
+        "library": 6,
+        "book": 50269327,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 163,
+    "fields": {
+        "library": 6,
+        "book": 31213519,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 164,
+    "fields": {
+        "library": 6,
+        "book": 102927,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 165,
+    "fields": {
+        "library": 6,
+        "book": 33532,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 166,
+    "fields": {
+        "library": 6,
+        "book": 58617701,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 167,
+    "fields": {
+        "library": 6,
+        "book": 3149348,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 168,
+    "fields": {
+        "library": 6,
+        "book": 35510008,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 169,
+    "fields": {
+        "library": 6,
+        "book": 51496,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 170,
+    "fields": {
+        "library": 6,
+        "book": 778861,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 171,
+    "fields": {
+        "library": 6,
+        "book": 49921026,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 172,
+    "fields": {
+        "library": 6,
+        "book": 54633172,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 173,
+    "fields": {
+        "library": 6,
+        "book": 22822858,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 174,
+    "fields": {
+        "library": 6,
+        "book": 9361589,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 175,
+    "fields": {
+        "library": 6,
+        "book": 3227063,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 176,
+    "fields": {
+        "library": 6,
+        "book": 132122,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 177,
+    "fields": {
+        "library": 6,
+        "book": 7624,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 178,
+    "fields": {
+        "library": 6,
+        "book": 44421460,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 179,
+    "fields": {
+        "library": 6,
+        "book": 28186,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 180,
+    "fields": {
+        "library": 6,
+        "book": 18378,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 181,
+    "fields": {
+        "library": 6,
+        "book": 72193,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 182,
+    "fields": {
+        "library": 1,
+        "book": 41086877,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 183,
+    "fields": {
+        "library": 1,
+        "book": 52848092,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 184,
+    "fields": {
+        "library": 1,
+        "book": 1795826,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 185,
+    "fields": {
+        "library": 1,
+        "book": 36114337,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 186,
+    "fields": {
+        "library": 1,
+        "book": 17163350,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 187,
+    "fields": {
+        "library": 1,
+        "book": 9981898,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 188,
+    "fields": {
+        "library": 1,
+        "book": 60194019,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 189,
+    "fields": {
+        "library": 1,
+        "book": 22011034,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 190,
+    "fields": {
+        "library": 1,
+        "book": 30185619,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 191,
+    "fields": {
+        "library": 1,
+        "book": 56927764,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 192,
+    "fields": {
+        "library": 1,
+        "book": 31213519,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 193,
+    "fields": {
+        "library": 1,
+        "book": 9025882,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 194,
+    "fields": {
+        "library": 1,
+        "book": 28245487,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 195,
+    "fields": {
+        "library": 1,
+        "book": 21523117,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 196,
+    "fields": {
+        "library": 1,
+        "book": 862821,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 197,
+    "fields": {
+        "library": 1,
+        "book": 40099418,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 198,
+    "fields": {
+        "library": 1,
+        "book": 52544164,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 199,
+    "fields": {
+        "library": 1,
+        "book": 15790264,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 200,
+    "fields": {
+        "library": 1,
+        "book": 10335006,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 201,
+    "fields": {
+        "library": 1,
+        "book": 6193119,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 202,
+    "fields": {
+        "library": 1,
+        "book": 1432349,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 203,
+    "fields": {
+        "library": 1,
+        "book": 18378,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 204,
+    "fields": {
+        "library": 1,
+        "book": 8367360,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 205,
+    "fields": {
+        "library": 1,
+        "book": 30335545,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 206,
+    "fields": {
+        "library": 1,
+        "book": 132297,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 207,
+    "fields": {
+        "library": 1,
+        "book": 60231832,
+        "rating": 5
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 208,
+    "fields": {
+        "library": 1,
+        "book": 907650,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 209,
+    "fields": {
+        "library": 1,
+        "book": 1104617,
+        "rating": 4
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 210,
+    "fields": {
+        "library": 1,
+        "book": 16077272,
+        "rating": 3
+    }
+},
+{
+    "model": "recommender_system.book_library",
+    "pk": 211,
+    "fields": {
+        "library": 1,
+        "book": 617373,
+        "rating": 0
+    }
+},
+{
+    "model": "recommender_system.adminmonthlyfavourites",
+    "pk": 25,
+    "fields": {
+        "book": 1885,
+        "review": "Pride and Prejudice by Jane Austen is my favorite book of all time-- which isn't a phrase I throw out lightly! This book truly has the best of all worlds."
+    }
+},
+{
+    "model": "recommender_system.adminmonthlyfavourites",
+    "pk": 26,
+    "fields": {
+        "book": 5297,
+        "review": "I finished reading this last night, and afterwards I spent an entire hour staring into space so I could contemplate over the majesty of this work. It left me speechless."
+    }
+},
+{
+    "model": "recommender_system.adminmonthlyfavourites",
+    "pk": 27,
+    "fields": {
+        "book": 102927,
+        "review": "The beauty of this book is not in the plot, but in its execution."
+    }
+},
+{
+    "model": "recommender_system.adminmonthlyfavourites",
+    "pk": 28,
+    "fields": {
+        "book": 54633172,
+        "review": "Damon Galgut's examines the disintegration of the dysfunctional privileged white Swart family in South Africa, living on a farm outside Pretoria, over a period of over 3 decades"
+    }
+},
+{
+    "model": "recommender_system.adminmonthlyfavourites",
+    "pk": 29,
+    "fields": {
+        "book": 617373,
+        "review": "This is one of Faulkner's true masterpieces: a grotesque road trip with a rotting corpse told in the voices of the extremely dysfunctional and occasionally insane family members."
+    }
+},
+{
+    "model": "recommender_system.adminmonthlyfavourites",
+    "pk": 31,
+    "fields": {
+        "book": 4671,
+        "review": null
+    }
+},
+{
+    "model": "recommender_system.adminmonthlyfavourites",
+    "pk": 32,
+    "fields": {
+        "book": 4671,
+        "review": null
+    }
+}
+]

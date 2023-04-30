@@ -1,0 +1,208 @@
+{% extends 'recommender_system/parent.html' %}
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+  
+</head>
+
+{% block page %}
+{% if request.user.is_anonymous %}
+
+<h2>No Permissions</h2>
+
+{% else %}
+<div class ="user">
+<div>
+  <h3 style="margin-left:50px; margin-top:25px;"> Hello, {{first_name}} </h3>
+</div>
+<div>
+<form method="POST" enctype="multipart/form-data" name="update-privacy-setting" style="margin-left:50px;">
+  {% csrf_token %}
+  <label for="privacy-setting">Privacy setting:</label>
+  <select name="setting" id="setting">
+    <option value="initial">{{privacy_setting}}</option>
+    {%if privacy == False%}
+    <option value="private">Private</option>
+    {%else %}
+    <option value="public">Public</option>
+    {%endif%}
+  </select>
+  <input type="submit" value="Submit">
+</form>
+</div>
+
+
+  {%if user_library %}
+<div class ="user_profile">
+    <div class ="homebody"> 
+      <p class ="hover-underline-animation ">My Library</p>
+  </div>
+    <br>
+    <div class = "all_user_books">
+
+    <table class ="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>Book ID </th>
+            <th>Title</th>
+            <th>Rating</th>
+            <th>Update Rating</th>
+        </tr>
+      </thead>
+        <tbody>
+        {% for mybook in ordered_by_ratings_books %}
+        <tr>
+            <td>{{mybook.book.book_id}}</td>
+            <td>{{mybook.book.title}}</td>
+            <td>{{mybook.rating}}</td>
+            <td><input type="submit" class="update-button" onclick="window.location.href='/update_rating/{{mybook.book.book_id}}';" value="Modify"/></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+
+<div class = "rating_pie_chart">
+<canvas id ="myFirstChart"></canvas>
+</div>
+
+  {% else %}
+<div class ="homebody"> 
+  <p class ="hover-underline-animation ">Add books or import to view</p>
+</div>
+  {% endif%}
+
+</div>
+</div>
+{% endif %}
+<br>
+<br>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const ctx = document.getElementById('myFirstChart');
+  
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['1 *', '2 *', '3 *', '4 *', '5 *'],
+        datasets: [{
+          label: '# of Ratings',
+          data: {{rating_data}},
+          borderWidth: 1
+        }]
+      },
+      options: {
+        plugins:{
+            title: {
+                display: true,
+                text: 'Ratings Distribution'
+            }
+        },
+      }
+    });
+  </script>
+<style>
+
+.update-button{
+  background-color: #B1D8B7;
+  border: none;
+  border-radius:25px;
+}
+
+.all_user_books{
+        display: inline-block;
+        overflow-y: auto;
+        /* margin-left:100px; */
+        vertical-align:middle;
+        height:300px;
+    }
+
+    .rating_pie_chart{
+        display: inline-block;
+        margin-left: 300px;
+        vertical-align:middle;
+        width:30%;
+        height:30%;
+        position: relative; 
+    }
+
+    .user_profile{
+      text-align:center;
+      margin-top:-50px;
+      
+    }
+
+    @media only screen and (max-width: 600px){
+      .rating_pie_chart{
+        width:90%;
+        height:45%;
+      }
+    }
+
+
+.hover-underline-animation {
+    font-size: 3vw;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    border-color: black;
+    }
+
+    .homebody{
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+        margin-top:50px;
+
+    }
+    .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ECE3F0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    }
+
+    .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
+
+
+
+    .table{
+      margin:25px 0;
+      font-size: 0.9em;
+      border-spacing: 50px 0;
+      width:100%;
+      height:100%;
+    }
+
+    .table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
+ background-color:#ECE3F0;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+ background-color:white;
+}
+.table thead{
+  background-color: #D6B2DA;
+}
+
+
+</style>
+{% endblock %}

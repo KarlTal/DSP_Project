@@ -1,0 +1,63 @@
+{% extends 'recommender_system/parent.html' %}
+{% load static %}
+{% block page %}
+
+<br>
+<br>
+{% for message in messages %}
+    <div class="message text-center alert alert-info {{ message.tags }}">
+        {{ message }}
+    </div>
+{% endfor %}
+<br>
+
+<div class = "container">
+
+    <div class = 'login-container'>
+
+    <form method="POST" enctype="multipart/form-data" style = "margin:auto; padding:50px; text-align: center;">
+        <h1 style="margin-left: auto; margin-right: auto; text-align: center; padding-top:20px;">Login</h1>
+        {% csrf_token %}
+
+        <br>
+        <input type="text" id="username" name="username" required  placeholder="Username"  style="width:300px; font-size:15px;"/>
+
+        <br>
+
+        <br>
+        <input type="password" id="password" name="password" required placeholder="Password"  style="width:300px; font-size:15px;"/>
+
+        <br>
+        <br>
+        <input type="submit" value="Login" class="btn btn-primary btn-block mb-4"  style="background-color: #4e7977; border-color: #4e7977;">
+
+        <br>
+        {{error_message}}
+        <br/>
+        <p style="font-size:15px;">Don't have an account? <a href="{% url 'Register' %}">Register</a></p>
+    </form>
+    </div>
+</div>
+
+<style>
+    .container{
+        display:grid;
+        grid-template-columns: 1fr;
+        margin:auto;
+    }
+    .login-container{
+        margin:auto;
+        margin-top:20px;
+        background-color: white;
+        height:500px;
+    }
+    label{
+        color:#002914;
+    }
+    input[type = "submit"]:hover {
+    color: black;
+
+    } 
+</style>
+
+{% endblock %}

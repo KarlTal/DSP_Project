@@ -1,0 +1,151 @@
+{% extends 'recommender_system/parent.html' %}
+{% load static %}
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    
+</head>
+
+{% block page %}
+<div class ="homebody"> 
+    <p class ="hover-underline-animation ">WHAT SHOULD I READ NEXT ?</p>
+</div>
+<br>
+<div class = "user-intro-books">
+<img id = "home_image" src = "static/recommender_system/home/little_life.jpg" style ="width:50%; height:90%">
+<img id = "home_image" src = "static/recommender_system/home/men_without.jpg" style ="width:50%; height:90%">
+<img id = "home_image" src = "static/recommender_system/home/the_promise.jpg" style ="width:50%; height:90%">
+</div>
+<br>
+<div class = "header"> 
+    <div class = "color-overlay d-flex justify-content-center align-items-center">
+        <h1 class = "image-text">"And, when you want something, all the universe conspires in helping you to achieve it." - <i>The Alchemist</i> by Paulo Coelho</h1>
+    </div>
+</div>
+
+
+{%if monthly_favourites %}
+<h1 style = "text-align:center;    background-color: white;">Admin's monthly favourite books</h1>
+{% endif%}
+<div class = "admin-intro-books">
+    {% for book in monthly_favourites %}
+    <div class = "admin-books">
+    <img id = "admin_image" src = "{{book.book.cover_image.url}}" style ="width:50%; height:60%; margin-bottom:10px;" >
+    <h4>{{book.book.title}}</h4>
+    <!-- <h3>{{book.book.title}}</h3> -->
+    <p style="font-weight:100; font-family:sans-serif">{{book.review}}</p>
+    </div>
+    {% endfor %}
+</div>
+<style>
+
+body{
+        background-image: url("{% static 'recommender_system/home/floral.png' %}");
+        background-repeat: repeat;
+        background-size: 10%;
+    }
+
+.user-intro-books{
+        margin-left: 10%;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+
+.admin-intro-books{
+        /* margin-left: 10%; */
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        height:900px;
+        /* margin-right: 10%; */
+        background-color: white;
+        width:100%;
+        padding-left:10%;
+        padding-right:10%;
+        
+    }
+.admin-books{
+    background-color: white;
+    margin-bottom:20px;
+    margin-right:10px;
+    overflow:auto;
+    text-align:center;
+    padding-top:10px;
+
+}
+
+    #admin_images{
+        width:100%;
+        height:100%;
+    }
+
+
+    .hover-underline-animation {
+    font-size: 4vw;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    display: inline-block;
+    position: relative;
+    }
+
+    .homebody{
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+        margin-top:50px;
+
+    }
+    .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    }
+
+    .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
+
+
+    .image-text{
+    font-size: 2rem;
+    }
+
+    #home_image{
+        border:solid;
+        border-radius: 25px;
+        border-width:10px;
+        border-color: #e9b3a0;
+    }
+    
+    .intro{
+        margin-left: 100px;
+        border-radius: 25px;
+    }
+
+    .header{
+    background-color:#4e7977;
+    width:100%;
+    background-size: cover;
+    min-height:30vh;
+    position:relative;
+    color:white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+
+
+</style>
+
+{% endblock %}
+
+
