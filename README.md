@@ -46,5 +46,7 @@ Repository for Digital Systems Project
 
 ### User details
 username: admin
+<br>
 password: admin123
+<br>
 user_type = Admin
