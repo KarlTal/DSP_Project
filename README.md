@@ -22,6 +22,14 @@ Repository for Digital Systems Project
 2. Place all the downloaded files into the ```dsp_project/csv_files/``` folder.
 ---
 
+### Running Docker containers
+- ``` Docker Desktop ```
+1. Ensure that docker desktop is running and installed in the local machine.
+2. Enter the command prompt and enter the directory where the DockerFile is located.
+3. Enter terminal and enter ```docker compose up --build ```.
+4. Wait for 1 min till the database and django container are running.
+5. Click the port for the django container in Docker Desktop.
+
 # Jupyter Notebook Implementation
 
 ## Required files
